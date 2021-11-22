@@ -1,5 +1,6 @@
 # Slots
-
+**일반 스핀**
+**터보 스핀**
 ```c#
     IEnumerator LineSpin(GameObject[] _slots, int _spinCount, bool _lastLine)
     {
