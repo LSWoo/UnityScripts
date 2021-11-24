@@ -36,17 +36,20 @@
 ```
 **터보 스핀**
 ```c#
-    IEnumerator LineSpin(GameObject[] _slots, int _spinCount, bool _lastLine)
+    if (isTurbo && !isSpin)
     {
-        for (int i = 0; i < _spinCount * 5; i++)
+
+        int SpinCount = UnityEngine.Random.Range(7, 8);
+        
+        for (int i = 0; i < SpinCount * 4; i++)
         {
-            for (int x = 0; x < _slots.Length; x++)
+            isSpin = true;
+            for (int j = 0; j < Slots.Length; j++)
             {
-                _slots[x].transform.localPosition -= movePos;
+                Slots[j].transform.localPosition -= movePos;
             }
             yield return new WaitForSeconds(spinSpeed);
         }
-        if (_lastLine)
             isSpin = false;
     }
 ```
