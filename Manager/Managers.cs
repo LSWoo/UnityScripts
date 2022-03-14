@@ -13,11 +13,12 @@ public class Managers : MonoBehaviour
     DataManager dataManager = new DataManager();
     public static DataManager _data { get { return instance.dataManager; } }
     public static UIManager _UI { get { return GameObject.Find("@UIManager").GetComponent<UIManager>(); } }
+    public static InventoryManager _Inven { get { return GameObject.Find("@InventoryManager").GetComponent<InventoryManager>(); } }
 
     private void Start()
     {
         Init();
-        _data.SetWeapon();
+        _data.Start();
     }
     static void Init()
     {
