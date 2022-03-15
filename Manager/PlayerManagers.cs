@@ -6,9 +6,10 @@ public class PlayerManagers : MonoBehaviour
 {
     private Animator animator;
 
-    Weapon.WeaponType weaponType;
 
     #region Move
+    float mouseX = 0f;
+    float mouseSpeed = 3f;
     public MoveState moveType;
     public enum MoveState
     {
@@ -55,17 +56,19 @@ public class PlayerManagers : MonoBehaviour
     }
     void LookingPointer()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        float _CamerarayDistance = 100f;
-        LayerMask layerMask = 1 << LayerMask.NameToLayer("Ground");
+        mouseX += Input.GetAxis("Mouse X") * mouseSpeed;
+        transform.eulerAngles = new Vector3(0, mouseX, 0);
+        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit hit;
+        //float _CamerarayDistance = 100f;
+        //LayerMask layerMask = 1 << LayerMask.NameToLayer("Ground");
 
-        if (Physics.Raycast(ray, out hit, _CamerarayDistance, layerMask))
-        {
-            Debug.DrawRay(Camera.main.transform.position, ray.direction * 10, Color.red);
-            Vector3 dir = new Vector3(hit.point.x, transform.position.y, hit.point.z) - transform.position;
-            transform.forward = dir;
-        }
+        //if (Physics.Raycast(ray, out hit, _CamerarayDistance, layerMask))
+        //{
+        //    Debug.DrawRay(Camera.main.transform.position, ray.direction * 10, Color.red);
+        //    Vector3 dir = new Vector3(hit.point.x, transform.position.y, hit.point.z) - transform.position;
+        //    transform.forward = dir;
+        //}
     }
     void Move()
     {
