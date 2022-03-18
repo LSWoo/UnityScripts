@@ -8,6 +8,7 @@ public class PlayerInfo
 
 {
     // ----------------------------------------------------------- Stats -------------------------------------------------------------
+    
     public float m_hungry = 100f;
     public float m_thirsty = 100f;
     public float m_stamina = 100f;
