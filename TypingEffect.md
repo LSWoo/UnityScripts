@@ -1,3 +1,8 @@
+```Text
+String.Substring(a, b);
+a = string 의 몇번째부터 시작할것인지
+b = string 의 어디까지 출력할것인지.
+```
 ```C++
 using System.Collections;
 using System.Collections.Generic;
