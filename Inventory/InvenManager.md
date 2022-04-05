@@ -1,3 +1,4 @@
+```C#
 public class Inventory : MonoBehaviour
 {
     List<GameObject> Slots = new List<GameObject>();
@@ -110,3 +111,4 @@ public class Inventory : MonoBehaviour
     }
   
 }
+```
