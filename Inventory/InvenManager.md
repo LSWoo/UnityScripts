@@ -5,7 +5,11 @@ public class Inventory : MonoBehaviour
   
     public GameObject Contents;
     public Button[] Menu_Btn
-  
+    public Text Empty_txt;
+    
+    GameObject SelectBtn;
+    string SelectPanel;
+    
     private void Start()
     {
         SetSlots();
