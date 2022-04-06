@@ -62,7 +62,9 @@ public class Inventory : MonoBehaviour
   
     void InvenSlotUpdate()
     {
-        int StartIndex = 1;
+        int _itemCode = 2;
+        int _targetIndex = 1;
+        int _startIndex = 1;
 
         SelectInvenList.RemoveRange(0, SelectInvenList.Count);
         for (int i = 0; i < Slots.Count; i++)
@@ -81,19 +83,68 @@ public class Inventory : MonoBehaviour
             switch (SelectPanel)
             {
                 case "Menu01":
-                    Managers._util.AddTargetItem(2, SelectFunitureList, Managers._data.FunitureInvenList, 1, "1", StartIndex);
+                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            {
+                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                {
+                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
+                                    {
+                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                    }
+                                }
+                            }
                     break;                                                                                                  
                 case "Menu02":
-                    Managers._util.AddTargetItem(2, SelectFunitureList, Managers._data.FunitureInvenList, 1, "2", StartIndex);
+
+                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            {
+                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                {
+                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("2", StartIndex))
+                                    {
+                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                    }
+                                }
+                            }
                     break;                                                                                                  
                 case "Menu03":                                                                                              
-                    Managers._util.AddTargetItem(2, SelectFunitureList, Managers._data.FunitureInvenList, 1, "3", StartIndex);
+
+                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            {
+                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                {
+                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("3", StartIndex))
+                                    {
+                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                    }
+                                }
+                            }
                     break;                                                                                                  
                 case "Menu04":                                                                                              
-                    Managers._util.AddTargetItem(2, SelectFunitureList, Managers._data.FunitureInvenList, 1, "4", StartIndex);
+
+                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            {
+                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                {
+                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("4", StartIndex))
+                                    {
+                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                    }
+                                }
+                            }
                     break;                                                                                                  
                 case "Menu05":                                                                                              
-                    Managers._util.AddTargetItem(2, SelectFunitureList, Managers._data.FunitureInvenList, 1, "5", StartIndex);
+
+                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            {
+                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                {
+                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("5", StartIndex))
+                                    {
+                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                    }
+                                }
+                            }
                     break;
             }
   
@@ -109,6 +160,7 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    
   
 }
 ```
