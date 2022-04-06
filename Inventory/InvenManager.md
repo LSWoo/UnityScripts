@@ -99,7 +99,7 @@ public class Inventory : MonoBehaviour
                             {
                                 if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("2", StartIndex))
                                     {
                                         SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
@@ -111,7 +111,7 @@ public class Inventory : MonoBehaviour
                             {
                                 if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("3", StartIndex))
                                     {
                                         SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
@@ -123,7 +123,7 @@ public class Inventory : MonoBehaviour
                             {
                                 if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("4", StartIndex))
                                     {
                                         SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
@@ -135,7 +135,7 @@ public class Inventory : MonoBehaviour
                             {
                                 if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("5", StartIndex))
                                     {
                                         SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
