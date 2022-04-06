@@ -108,6 +108,7 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    
     void ItemSearch(string _id)
     {
         int _itemCode = 2;
@@ -124,7 +125,6 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
-        
     }
   
 }
