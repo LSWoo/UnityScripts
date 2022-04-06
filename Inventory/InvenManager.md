@@ -83,65 +83,61 @@ public class Inventory : MonoBehaviour
             switch (SelectPanel)
             {
                 case "Menu01":
-                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            for (int i = 0; i < _data.ItemInvenList.Count; i++)
                             {
-                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
                                     {
-                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                        SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
                                 }
                             }
                     break;                                                                                                  
                 case "Menu02":
-
-                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            for (int i = 0; i < _data.ItemInvenList.Count; i++)
                             {
-                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("2", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
                                     {
-                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                        SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
                                 }
                             }
                     break;                                                                                                  
                 case "Menu03":                                                                                              
-
-                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                             for (int i = 0; i < _data.ItemInvenList.Count; i++)
                             {
-                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("3", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
                                     {
-                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                        SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
                                 }
                             }
                     break;                                                                                                  
                 case "Menu04":                                                                                              
-
-                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            for (int i = 0; i < _data.ItemInvenList.Count; i++)
                             {
-                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("4", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
                                     {
-                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                        SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
                                 }
                             }
                     break;                                                                                                  
                 case "Menu05":                                                                                              
-
-                            for (int i = 0; i < _data.FunitureInvenList.Count; i++)
+                            for (int i = 0; i < _data.ItemInvenList.Count; i++)
                             {
-                                if (0 == _data.FunitureInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+                                if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
                                 {
-                                    if (_targetIndex == _data.FunitureInvenList[i].m_ID.ToString().IndexOf("5", StartIndex))
+                                    if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf("1", StartIndex))
                                     {
-                                        SelectInvenList.Add(_data.FunitureInvenList[i]);
+                                        SelectInvenList.Add(_data.ItemInvenList[i]);
                                     }
                                 }
                             }
