@@ -59,7 +59,25 @@ public class Inventory : MonoBehaviour
         }
         InvenSlotUpdate();
     }
-  
+    
+    void ItemSearch(string _id)
+    {
+        int _itemCode = 2;
+        int _targetIndex = 1;
+        int _startIndex = 1;
+        
+        for (int i = 0; i < _data.ItemInvenList.Count; i++)
+        {
+            if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
+            {
+                if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf(_id, StartIndex))
+                {
+                    SelectInvenList.Add(_data.ItemInvenList[i]);
+                }
+            }
+        }
+    }
+    
     void InvenSlotUpdate()
     {
 
@@ -108,24 +126,6 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-    
-    void ItemSearch(string _id)
-    {
-        int _itemCode = 2;
-        int _targetIndex = 1;
-        int _startIndex = 1;
-        
-        for (int i = 0; i < _data.ItemInvenList.Count; i++)
-        {
-            if (0 == _data.ItemInvenList[i].m_ID.ToString().IndexOf($"{ItemCode}"))
-            {
-                if (_targetIndex == _data.ItemInvenList[i].m_ID.ToString().IndexOf(_id, StartIndex))
-                {
-                    SelectInvenList.Add(_data.ItemInvenList[i]);
-                }
-            }
-        }
-    }
-  
+   
 }
 ```
