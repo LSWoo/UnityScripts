@@ -12,7 +12,8 @@ URL 은 첫번째 시트의 경우 gid 가 0 의 값을 가지지만 두번째 �
 ### 읽기 범위
 &range=[행:열] 을 적어주면 된다.
 "https://docs.google.com/spreadsheets/d/[ID]/export?format=tsv&gid=[시트 ID]&range=[A2:D]";  
-  
+
+
 ### 스크립트
 ```C#
 using System.Collections;
