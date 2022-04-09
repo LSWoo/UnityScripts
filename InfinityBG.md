@@ -12,13 +12,8 @@ public class InfinityBG : MonoBehaviour
     int BG_Num = 0;
     float bgScale = 17.81677F;
     float NextPos = 53.4503F;
-    double DesPos;
-
-    private void Start()
-    {
-        //Player = Managers._data.Player;
-        DesPos = 20f;
-    }
+    float DesPos = 20f;
+    
     void Update()
     {
         if (Player.transform.position.x >= DesPos)
