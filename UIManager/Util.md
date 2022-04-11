@@ -21,8 +21,9 @@ public class Util
             for(int i = 0; i < parents.transform.childCount; i++)
             {
                 Transform transform = parents.transform.GetChild(i);
-
-                if (string.IsNullOrEmpty(name) || transform.name == name) // string.IsNullOrEmpty 를 사용해 name 이 Null 이거나 transform.name의 이름과 name 이 같다면 transform 에서 T 타입을 가져옵니다.
+                
+                // string.IsNullOrEmpty 를 사용해 name 이 Null 이거나 transform.name의 이름과 name 이 같다면 transform 에서 T 타입을 가져옵니다.
+                if (string.IsNullOrEmpty(name) || transform.name == name) 
                 {
                     T component = transform.GetComponent<T>();
                     if (component != null)
@@ -34,7 +35,8 @@ public class Util
         {
             foreach(T component in parents.GetComponentsInChildren<T>())
             {
-                if (string.IsNullOrEmpty(name) || component.name == name) // string.IsNullOrEmpty 를 사용해 name 이 Null 이거나 비어있으면 component 를 return 해줍니다.
+                // string.IsNullOrEmpty 를 사용해 name 이 Null 이거나 비어있으면 component 를 return 해줍니다.
+                if (string.IsNullOrEmpty(name) || component.name == name) 
                     return component;
             }
         }
