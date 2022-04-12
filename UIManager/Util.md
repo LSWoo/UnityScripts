@@ -33,7 +33,8 @@ public class Util
         }
         else
         {
-            foreach(T component in parents.GetComponentsInChildren<T>())
+            // GetComponentsInChildren 의 includeInactive 를 true 로 설정해 활성화되지 않은 오브젝트들도 찾아줍니다.
+            foreach(T component in parents.GetComponentsInChildren<T>(true))
             {
                 // string.IsNullOrEmpty 를 사용해 name 이 Null 이거나 비어있으면 component 를 return 해줍니다.
                 if (string.IsNullOrEmpty(name) || component.name == name) 
@@ -42,6 +43,17 @@ public class Util
         }
 
         return null;
+    }
+    
+    public static GameObject FindChild(GameObject parents, string name = null, bool recursive = false)
+    {
+        // GameObject 는 컴포넌트가 아니기때문에 Transform 을 먼저 찾아 Transform 의 GameObject 를 return 해줍니다.
+        Transform transform = FindChild<Transform>(parents, name, recursive);
+
+        if (transform == null)
+            return null;
+
+        return transform.gameObject;
     }
 }
 
