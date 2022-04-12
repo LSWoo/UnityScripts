@@ -51,5 +51,21 @@ public class UIManager : MonoBehaviour
             objects[i] = Util.FindChild<T>(gameObject, names[i], true);
         }
     }
+    
+    T Get<T>(int _index) where T : UnityEngine.Object
+    {
+        UnityEngine.Object[] objects = null;
+
+        if (_objects.TryGetValue(typeof(T), out objects) == false)
+            return null;
+
+        return objects[_index] as T; // _objects[_index] 가 가지고 있는 타입은 UnityEngine.Object 이기 떄문에 T 로 캐스팅을 해줘야합니다.
+    }
+
+    protected Button GetButton(int _index) { return Get<Button>(_index); }
+    protected Text GetText(int _index) { return Get<Text>(_index); }
+    protected Image GetImage(int _index) { return Get<Image>(_index); }
+    protected GameObject GetGameObject(int _index) { return Get<GameObject>(_index); }
+    
 }
 ```
