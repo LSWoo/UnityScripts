@@ -23,11 +23,17 @@ public class UIManager : MonoBehaviour
      Test1_txt,
      Test2_txt,
     }
+    enum GameObjects
+    {
+     Test1_obj,
+     Test2_obj,
+    }
     
     private void Start()
     {
         Bind<Button>(typeof(Buttons)); // 리플렉션을 사용해서 enum 타입을 넘겨줍니다. Button 컴포넌트를 찾아 맵핑해줍니다.
         Bind<Text>(typeof(Texts)); // Text 컴포넌트를 찾아 맵핑해줍니다.
+        Bind<GameObject>(typeof(GameObject)); // Text 컴포넌트를 찾아 맵핑해줍니다.
     }
     
     void Bind<T>(Type type) where T : UnityEngine.Object
