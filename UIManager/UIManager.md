@@ -1,5 +1,4 @@
-- 리플렉션 기능을 사용해 UI 를 맵핑하는 스크립트입니다.
-- 
+- 리플렉션 기능을 사용해 UI 를 맵핑하는 스크립트
 ```C#
 using System;
 using System.Collections;
@@ -10,7 +9,7 @@ using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
-    // 딕셔너리를 사용해 각 타입마다 오브젝트 배열안에 타입에 맞는 오브젝트들을 넣어줍니다.
+    // 딕셔너리를 사용해 각 타입마다 오브젝트 배열에 타입에 맞는 오브젝트들을 넣어줍니다.
     Dictionary<Type, UnityEngine.Object[]> _objects = new Dictionary<Type, UnityEngine.Object[]>(); 
     
     enum Buttons
