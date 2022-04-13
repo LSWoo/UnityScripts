@@ -10,7 +10,8 @@ using UnityEngine.EventSystems;
 public class UIManager : MonoBehaviour
 {
     // 딕셔너리를 사용해 각 타입마다 오브젝트 배열에 타입에 맞는 오브젝트들을 넣어줍니다.
-    Dictionary<Type, UnityEngine.Object[]> _objects = new Dictionary<Type, UnityEngine.Object[]>(); 
+    // 여러 자식 클래스에서 UIManager 를 상속 받게된다면 static 을 붙여 공유해주도록합니다.
+    static Dictionary<Type, UnityEngine.Object[]> _objects = new Dictionary<Type, UnityEngine.Object[]>(); 
     
     enum Buttons
     {
