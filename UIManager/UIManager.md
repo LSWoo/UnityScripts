@@ -1,6 +1,9 @@
 - 리플렉션 기능을 사용해 UI 를 맵핑하는 스크립트  
-##설명  
-T형식을 반환하는 함수 Bind를 만들어준다.
+
+## 설명  
+T 형식을 받는 함수 Bind를 만들어준다.
+Bind 함수는 string[] 변수 names 에 Enum.GetNames 함수를 사용해 Enum 이 가지고 있는 값들을 넣어줍니다.
+namse 의 값을 이용해 최상위 객체인 UnityEngine.Object[] 형식의 변수 objects를 names.Length 만큼 선언해 Dictionary 에 키값에는 T 형식을 Value 값에는 objects를 추가해줍니다.
 
 ```C#
 using System;
@@ -36,7 +39,7 @@ public class UIManager : MonoBehaviour
     {
         Bind<Button>(typeof(Buttons)); // 리플렉션을 사용해서 enum 타입을 넘겨줍니다. Button 컴포넌트를 찾아 맵핑해줍니다.
         Bind<Text>(typeof(Texts)); // Text 컴포넌트를 찾아 맵핑해줍니다.
-        Bind<GameObject>(typeof(GameObject)); // Text 컴포넌트를 찾아 맵핑해줍니다.
+        Bind<GameObject>(typeof(GameObjectS)); // Text 컴포넌트를 찾아 맵핑해줍니다.
     }
     
     void Bind<T>(Type type) where T : UnityEngine.Object
