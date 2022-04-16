@@ -1,4 +1,7 @@
 - 리플렉션 기능을 사용해 UI 를 맵핑하는 스크립트
+**설명**  
+T형식을 반환하는 함수 Bind를 만들어준다.
+
 ```C#
 using System;
 using System.Collections;
