@@ -1,6 +1,6 @@
 - 리플렉션 기능을 사용해 UI 를 맵핑하는 스크립트  
 
-## 설명  
+## Bind 함수 설명  
 ```Text
 T 형식을 받는 함수 Bind를 만들어.
 Bind 함수는 string[] 변수 names 에 Enum.GetNames 함수를 사용해 Enum 이 가지고 있는 값들을 넣어줍니다.  
