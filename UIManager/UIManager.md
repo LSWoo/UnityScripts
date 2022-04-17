@@ -10,6 +10,8 @@ Key값에 T 를 넣지 않고 typeof(T) 를 넣은 이유는
 for 문을 사용하여 T 가 GameObject 인지 아닌지 null 인지 아닌지 확인해줍니다.
 ( 여기서 GameObject 인지 아닌지를 확인하는 이유는 GameObject 는 컴포넌트가 아니기때문에 )
 ```
+
+
 ## Get 함수
 ```Text
 T 형식을 받아 T 형식으로 반환하는 함수 Get 함수를 만들어줍니다.
