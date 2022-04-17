@@ -10,20 +10,11 @@ names.Length 길이만큼 for 문을 돌면서 T 가 GameObject 인지 아닌지
 ( 여기서 GameObject 인지 아닌지를 확인하는 이유는 GameObject 는 컴포넌트가 아니기때문에 )
 ```
 ## Get 함수 설명
+
+```Text
 T 형식을 받아 T 형식으로 반환하는 함수 Get 함수를 만들어준다.
 UnityEngine.Object[] objects 형식의 변수를 선언하고 objects[_index] 를 as 를 사용해 T 값으로 캐스팅해 반환해줍니다.
 TryGetValue 함수는 첫번째 매개변수로 Key 값을 두번째 매개변수로 Value 값을 받아 Dictionary 에 해당 Key 값에 Value 가 True 인지 False 인지를 반환하는 함수입니다.
-
-```Text
-    T Get<T>(int _index) where T : UnityEngine.Object
-    {
-        UnityEngine.Object[] objects = null;
-
-        if (_objects.TryGetValue(typeof(T), out objects) == false)
-            return null;
-
-        return objects[_index] as T; // _objects[_index] 가 가지고 있는 타입은 UnityEngine.Object 이기 떄문에 T 로 캐스팅을 해줘야합니다.
-    }
 ```
 ```C#
 using System;
