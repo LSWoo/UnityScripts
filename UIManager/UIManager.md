@@ -1,18 +1,17 @@
 - 리플렉션 기능을 사용해 UI 를 맵핑하는 스크립트  
 
-## Bind 함수 설명  
+## Bind 함수 
 ```Text
-T 형식을 받는 함수 Bind를 만들어.
-Bind 함수는 string[] 변수 names 에 Enum.GetNames 함수를 사용해 Enum 이 가지고 있는 값들을 넣어줍니다.  
+T 형식을 받는 함수 Bind를 만들어줍니다.
+string[] 변수 names 를 선언하고 값으로 Enum 이 가지고 있는 값들을 Enum.GetNames 함수를 사용해 넣어줍니다.  
 namse 의 값을 이용해 최상위 객체인 UnityEngine.Object[] 형식의 변수 objects를 names.Length 만큼 선언합니다.
 Dictionary 키값에는 T 를 Value 값에는 UnityEngine.Object[] 를 추가해줍니다.  
 names.Length 길이만큼 for 문을 돌면서 T 가 GameObject 인지 아닌지 확인해주고 null 인지 아닌지 확인해줍니다.
 ( 여기서 GameObject 인지 아닌지를 확인하는 이유는 GameObject 는 컴포넌트가 아니기때문에 )
 ```
-## Get 함수 설명
-
+## Get 함수
 ```Text
-T 형식을 받아 T 형식으로 반환하는 함수 Get 함수를 만들어준다.
+T 형식을 받아 T 형식으로 반환하는 함수 Get 함수를 만들어줍니다.
 UnityEngine.Object[] objects 형식의 변수를 선언하고 objects[_index] 를 as 를 사용해 T 값으로 캐스팅해 반환해줍니다.
 TryGetValue 함수는 첫번째 매개변수로 Key 값을 두번째 매개변수로 Value 값을 받아 Dictionary 에 해당 Key 값에 Value 가 True 인지 False 인지를 반환하는 함수입니다.
 ```
