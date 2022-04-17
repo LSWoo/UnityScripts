@@ -1,6 +1,6 @@
 - 리플렉션 기능을 사용해 UI 를 맵핑하는 스크립트  
 
-## Bind 함수 
+### Bind 함수 
 ```Text
 T 형식을 받는 함수 Bind를 만들어줍니다.
 string[] 변수 names 를 선언하고 값으로 Enum 이 가지고 있는 값들을 Enum.GetNames 함수를 사용해 넣어줍니다.  
@@ -12,7 +12,7 @@ for 문을 사용하여 T 가 GameObject 인지 아닌지 null 인지 아닌지 
 ```
 
 
-## Get 함수
+### Get 함수
 ```Text
 T 형식을 받아 T 형식으로 반환하는 함수 Get 함수를 만들어줍니다.
 UnityEngine.Object[] objects 형식의 변수를 선언하고 objects[_index] 를 as 를 사용해 T 값으로 캐스팅해 반환해줍니다.
