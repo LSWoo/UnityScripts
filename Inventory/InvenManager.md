@@ -8,7 +8,6 @@ public class Inventory : MonoBehaviour
     public Button[] Menu_Btn
     public Text Empty_txt;
     
-    GameObject SelectBtn;
     string SelectPanel;
     
     private void Start()
@@ -35,11 +34,13 @@ public class Inventory : MonoBehaviour
             Slots[i].GetComponent<Button>().onClick.AddListener(SelectFuniture);
         }
     }
-    
+    string GetButtonName()
+    {
+        return EventSystem.current.currentSelectedGameObject;
+    }
     void GetClicKButton()
     {
-        SelectBtn = EventSystem.current.currentSelectedGameObject;
-        switch (SelectBtn.name)
+        switch (GetButtonName())
         {
             case "Menu_Btn_01":
                 SelectPanel = "Menu01";
