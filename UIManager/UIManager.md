@@ -3,6 +3,7 @@
 ### Bind 함수 
 ```Text
 T 형식을 받는 함수 Bind를 만들어줍니다.
+여기서 매개변수로 Type 형식을 받는 이유는 Enum값의 이름들은 원래 가져올수 없지만 리플렉션 기능을 활용해 Enum 값들을 받아오기 위해서입니다.
 string[] 변수 names 를 선언하고 값으로 Enum 이 가지고 있는 값들을 Enum.GetNames 함수를 사용해 넣어줍니다.  
 최상위 객체인 UnityEngine.Object[] 형식의 변수 objects를 names.Length 만큼 선언합니다.
 Dictionary.Add(typeof(T), objects); Key값은 T 를 Value값은 UnityEngine.Object[] 를 추가해줍니다. 
