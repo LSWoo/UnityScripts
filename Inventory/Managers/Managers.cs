@@ -32,6 +32,11 @@ public class Managers : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        StartCoroutine(GoogleSheetManager.SetItemData());
+    }
+
     private void Update()
     {
         if (OnUpdate != null)
