@@ -48,6 +48,6 @@ public class Util
 
     public static string GetButtonName()
     {
-        return EventSystem.current.lastSelectedGameObject.name;
+        return EventSystem.current.currentSelectedGameObject.name;
     }
 }
