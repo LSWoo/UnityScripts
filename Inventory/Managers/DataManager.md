@@ -9,12 +9,5 @@ public class DataManager
     public List<ItemInfo> ItemInvenList = new List<ItemInfo>();
 
     public List<ItemInfo> ItemData = new List<ItemInfo>();
-    
-    public void SetItem()
-    {
-        ItemInvenList.Add(new ItemData(110001, "기본 칼"));
-        ItemInvenList.Add(new ItemData(120002, "기본 갑옷"));
-        ItemInvenList.Add(new ItemData(130003, "기본 장갑"));
-    }
 }
 ```
