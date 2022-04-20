@@ -3,6 +3,9 @@
 ### UI 관리
 - UI Base 를 통해 이름값으로 UI 맵핑
 
+### 인벤토리 로직
+- 인벤토리 로직은 InvenManger 스크립트를 통해 관리
+
 ### 인벤토리 데이터 구성
 - 구글 스프레드 시트 데이터를 DataManager 의 ItemDataList 에 넣어 데이터 관리
 
