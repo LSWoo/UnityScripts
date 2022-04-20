@@ -7,7 +7,7 @@
 - 인벤토리 관련 로직은 InvenManger 스크립트를 통해 관리
 
 ### 인벤토리 데이터 구성
-- 구글 스프레드 시트 데이터를 DataManager 의 ItemDataList 에 넣어 데이터 관리
+- 구글 스프레드 시트를 연동해 DataManager 의 ItemDataList 에 넣어 데이터 관리
 
 ### 아이템 정보
 - ItemInfo 클래스를 통해 기본적인 데이터 생성
