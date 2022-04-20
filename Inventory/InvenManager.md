@@ -1,3 +1,5 @@
+## 각 메뉴 별로 보여주는 인벤토리
+
 ```C#
 public class Inventory : MonoBehaviour
 {
