@@ -19,7 +19,7 @@ T 타입을 받아 T 타입으로 반환하는 함수 Get 함수를 만들어줍
 UnityEngine.Object[] 타입의 objects 변수를 선언하고 objects[_index] 를 as 를 사용해 T 타입으로 캐스팅해 반환해줍니다.
 TryGetValue 함수는 반환값으로 Bool 값을 첫번째 매개변수로 Key 값을 두번째 매개변수로 Value 값을 받아 Dictionary 에 해당 Key 값에 Value 가 True 인지 False 인지를 반환하는 함수입니다.
 ```
- P
+
   
 ```C#
 using System;
