@@ -67,18 +67,9 @@ public class InventoryManager : UIBase
     }
     void ChangedMenu()
     {
-        switch (Util.GetButtonName())
-        {
-            case "Inventory_Menu01_btn":
-                SelectMenu = Menu.Weapon;
-                break;
-            case "Inventory_Menu02_btn":
-                SelectMenu = Menu.Cloth;
-                break;
-            case "Inventory_Menu03_btn":
-                SelectMenu = Menu.Use;
-                break;
-        }
+        for (int i = 0; i < Menu_btn.Count; i++)
+            if (Util.GetButton().name == Menu_btn[i].name)
+                SelectMenu = (Menu)i;
     }
     void GetSlotItem()
     {
