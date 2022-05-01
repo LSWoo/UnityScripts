@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,9 +28,11 @@ public class InventoryManager : UIBase
 
     void SetGameObject()
     {
-        Menu_btn.Add(GetButton((int)Buttons.Inventory_Menu01_btn));
-        Menu_btn.Add(GetButton((int)Buttons.Inventory_Menu02_btn));
-        Menu_btn.Add(GetButton((int)Buttons.Inventory_Menu03_btn));
+        for (int i = 0; i < Enum.GetValues(typeof(Buttons)).Length; i++)
+        {
+            if (Enum.GetName(typeof(Buttons), i).Contains("Menu0"))
+                Menu_btn.Add(GetButton(i));
+        }
 
         for (int i = 0; i < GetGameObject((int)GameObjects.Inventory_Contents).transform.childCount; i++)
             Slots.Add(GetGameObject((int)GameObjects.Inventory_Contents).transform.GetChild(i).gameObject);
