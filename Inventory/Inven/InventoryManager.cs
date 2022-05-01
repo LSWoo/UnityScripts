@@ -15,9 +15,9 @@ public class InventoryManager : UIBase
     Menu SelectMenu = Menu.Weapon;
     enum Menu
     {
-        Weapon = 1,
-        Cloth = 2,
-        Use = 3,
+        Weapon,
+        Cloth,
+        Use,
     }
 
     private void Start()
